@@ -10,7 +10,6 @@ int main(){
     printf("Digite uma palavra: ");
     scanf("%s", palavra);
 
-    // ------- SEGUNDA VERSÃO --------------------
     tam = strlen(palavra);
     for(i = 0; i < strlen(palavra); i++){
         copia[i] = palavra[tam - 1];
@@ -28,9 +27,9 @@ int main(){
     }
 
     if(tam == iguais)
-        printf("\nEh palindroma...\n");
+        printf("Palindromo");
     else
-        printf("\nNao eh palindroma...\n");
+        printf("Não é palindromo");
 
     return 0;
 }
